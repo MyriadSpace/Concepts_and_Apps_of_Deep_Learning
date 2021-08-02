@@ -9,10 +9,10 @@
 * 182 쪽, 3번째 줄: n개의 객체 --> n개의 개체
 * 216 쪽, 위에서 5번째 줄: 0 ~ 256 사이의 정수 --> 0 ~ 255 까지의 정수
 * 252 쪽, 아래서 9번째 줄 ~ 6번째 줄: Xception (eXtreme Inception)과 depthwise separabel convolution 추가 설명 필요
-  (1) Xception 방식은 1x1 pointwise 컨볼루션 계산 이후 너비x높이 공간(spatial) 컨볼루션을 계산함 
-  (2) Depthwise Separable Convoltuion 방식은 너비x높이 공간(spatial) 컨볼루션을 먼저 계산하고 이후 1x1 pointwise 컨볼루션을 계산함
+  (1) Xception 방식은 목표 특성지도에 1x1 pointwise 컨볼루션 계산을 먼저하고 이후 너비x높이 공간(spatial) 컨볼루션을 계산함 
+  (2) Depthwise Separable Convoltuion 방식은 목표 특성지도에 각 깊이별 (채널별) 너비x높이 공간(spatial) 컨볼루션을 먼저 계산하고 이후 1x1 pointwise 컨볼루션을 계산함
   (3) Xception 방식과 Depthwise Separable Convoltuion 방식의 결과는 큰 차이가 없음
-  (4) TensorFlow Keras나 PyTorch는 Depthwise Separable Convoltuion 방식으로 각각 DepthwiseConv2D, SeparableConv2D 로 지원하고 있음
+  (4) TensorFlow Keras나 PyTorch는 Depthwise Separable Convoltuion 방식을 기준으로 각각 DepthwiseConv2D, SeparableConv2D 형태의 메소드를 지원하고 있음
   (5) 1x1 point-wise 컨볼루션 --> depthwise 분리된 컨볼루션 (depthwise separable convolution) 
 * 330 쪽, 맨 아랫줄: 이사전달 --> 의사전달
 * 487 쪽, 아래서 두번째 줄: 안정정 --> 안정적
