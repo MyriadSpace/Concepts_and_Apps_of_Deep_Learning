@@ -14,5 +14,6 @@
   (3) Xception 방식과 Depthwise Separable Convoltuion 방식의 결과는 큰 차이가 없음
   (4) TensorFlow Keras나 PyTorch는 Depthwise Separable Convoltuion 방식을 기준으로 각각 DepthwiseConv2D, SeparableConv2D 형태의 메소드를 지원하고 있음
   (5) 1x1 point-wise 컨볼루션 --> depthwise 분리된 컨볼루션 (depthwise separable convolution) 
+* 296 쪽, 아래서 8번째줄: 압력 --> 입력  
 * 330 쪽, 맨 아랫줄: 이사전달 --> 의사전달
 * 487 쪽, 아래서 두번째 줄: 안정정 --> 안정적
