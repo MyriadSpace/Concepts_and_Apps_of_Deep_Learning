@@ -16,4 +16,5 @@
   (5) 1x1 point-wise 컨볼루션 --> depthwise 분리된 컨볼루션 (depthwise separable convolution) 
 * 296 쪽, 아래서 8번째줄: 압력 --> 입력  
 * 330 쪽, 맨 아랫줄: 이사전달 --> 의사전달
+* 478 쪽: 식 (9.22) p(x|z) = p(x|z)p(z) / p(x) --> p(z|x) = p(x|z)p(z) / p(x)
 * 487 쪽, 아래서 두번째 줄: 안정정 --> 안정적
